@@ -10,7 +10,8 @@ final int DESTINATION = 1;
 final int VISITED = 2;
 final int START = 3;
 final int SUCCESS = 1;
-final int CYCLE_LIMIT = 200;
+final int CYCLE_LIMIT = 300;
+final int INCREMENTAL = 100;
 
 int cycles = 0;
 int cellW;
@@ -91,14 +92,14 @@ void setRandomMapObs()
 void drawGoldenPath(Node node)
 {    
   noStroke();
-  fill(#F0E50F);
+  fill(#0806BC);
   int cx = (cellW*(2*node.x+1))/2;
   int cy = (cellW*(2*node.y+1))/2;
   ellipse(cx,cy,nodeCircleDia,nodeCircleDia);
   
   if(node.parent != null)
   {
-    stroke(#F0E50F);
+    stroke(#0806BC);
     int cx1 = (cellW*(2*node.parent.x+1))/2;
     int cy1 = (cellW*(2*node.parent.y+1))/2;
     line(cx, cy, cx1, cy1);
@@ -201,7 +202,9 @@ int rrt_cycle()
   Node n = new Node(x,y);
   NodeDisPair closest = find_closest(root, n);
   Node cn = closest.n;
-  cn.add_neighbor(n);
+  
+  if(closest.dis <= INCREMENTAL)
+    cn.add_neighbor(n);
   
   map[y][x] = VISITED;
   
