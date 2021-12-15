@@ -1,5 +1,5 @@
 # RRT-processing
-In my opinion, best way to learn the algorithm is to implementing it from scrath. As a result I am giving my implementation of RRT algorithm
+In my opinion, best way to learn any algorithm is to implementing it from scrath. As a result I am giving my implementation of RRT algorithm
 
 Developed with processing 3.5.4
 
