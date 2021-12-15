@@ -1,7 +1,7 @@
 # RRT-processing
 In my opinion, best way to learn the algorithm is to implementing it from scrath. As a result I am giving my implementation of RRT algorithm
 
-<img src="https://github.com/berkealgul/RRT-processing/blob/main/rrt.gif" width="400" height="400"/>
+<img src="https://github.com/berkealgul/RRT-processing/blob/main/rrt.gif" width="500" height="500"/>
 
 
 ## How to use
