@@ -14,6 +14,6 @@ You can add/remove obstacle with mouse1 button or press 'e' to place random obst
 
 ## Aditional Notes
 - Obstacle system is not working as intended hence i do not recommend to add obstacles
-- Since new node generation is purely done with RNG finding path can take time or even cant find it most of times.
+- Since new node generation is purely done with RNG, finding path can take time even cant find it most of times.
 
 
